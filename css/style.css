@@ -1,0 +1,438 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+.container {
+    z-index: 1;
+    width: 100%;
+    max-width: 1200px;
+    margin: 20px auto;
+    display: grid;
+    grid-gap: 20px;
+    grid-template-columns: repeat(4, 1fr);
+    grid-template-rows: repeat(8, auto);
+    grid-template-areas:
+        "header header headerBlue headerBlue"
+        "figthVirus figthVirus figthVirus figthVirus"
+        "banners banners banners banners"
+        "whyVaccinate whyVaccinate whyVaccinate whyVaccinate"
+        "preparation preparation preparation preparation"
+        "emergency emergency emergency emergency"
+        "footer footer footer footer"
+        "footer footer footer footer";
+}
+
+.container .header {
+    width: 90%;
+    max-width: 1200px;
+
+    height: 50px;
+    background-color: 1689e3;
+    position: fixed;
+    
+    
+    z-index: 100;
+}
+
+.header > * {
+    vertical-align: middle;
+}
+
+.container .headerColors {
+    display: grid;
+    height: 50px;
+    grid-area: header;
+    z-index: 10;
+}
+
+.container .headerLeft {
+    display: grid;
+    height: 50px;
+    background-color: #e7f3fc;
+    grid-area: headerBlue;
+}
+
+.container .headerNav {
+
+    
+    width: 100%;
+    max-width: 1000px;
+    height: 50px;
+    text-align: center;
+    position: relative;  
+    top: -50px;
+    background-color: rgba(249, 246, 247, 0.12);
+    z-index: 2000;
+    font-weight: bold;
+    font-size: 16px;
+    
+}
+
+
+p {
+    color: #6d7b93;
+}
+
+h3, tr{
+    color: #2848c6;
+}
+h1,
+h2,
+h4,
+h5,
+h6 {
+    color: #3b5684;
+    font-weight: bold;
+}
+
+#h3 {
+    float: left;
+    width: 20%;
+    margin-top: 15px;
+    text-align: center;
+    text-justify: auto;
+    font-size: 30px;
+    
+    
+}
+nav {
+    width: 50%;
+    margin-left: 45%;
+    /* only for demonstration, should be removed */
+    text-align: center;
+}
+
+nav ul {
+    list-style-type: none;
+    position: relative;
+    
+    overflow: hidden;
+    color: #dddddd;
+}
+
+nav li {
+    width: 19.2%;
+    display: inline-block;
+}
+
+nav li a {
+
+    margin-top: 15px;
+    text-decoration: none;
+    align-items: center;
+    display: block;
+    color: #6d7b93;
+}
+
+.container .figthVirus {
+    grid-area: figthVirus;
+}
+
+.leftfightVirus {
+    width: 50%;
+    float: left;
+    z-index: 10;
+}
+
+.rightFightVirus {
+    width: 50%;
+    float: right;
+    top: -650px;
+    background-color: #1689e3;
+    z-index: 10;
+    /*right:  -60px;*/
+    margin-bottom: -120px;
+}
+
+.forms {
+    height: 100px;
+    width: 900px;
+    position: relative;
+    left: 80px;
+}
+
+.good {
+    position: relative;
+    bottom: 400px;
+    width: 700px;
+    height: 100px;
+    background-color: rgba(255, 255, 255, 0.8);
+    z-index: 50;
+}
+
+#schedule {
+    left: -25px;
+    height: 40px;
+    z-index: 1;
+    background-color: rgba(31, 62, 114, 0);
+    font-size: 22px;
+}
+
+.forms div {
+    float: left;
+}
+
+.forms .form h4 {
+    margin-left: 30px;
+}
+.form {
+    width: 170px;
+}
+
+.up {
+    margin-top: 30px;
+    width: 100%;
+}
+
+.down {
+    margin-top: 15px;
+    margin-left: 10px;
+}
+
+.container .banners {
+    margin-top: -10px;
+    grid-area: banners;
+    width: 100%;
+    box-sizing: border-box;
+}
+
+.row {
+    display: flex;
+}
+
+/* Create three equal columns that sits next to each other */
+.column {
+    flex: 25%;
+    padding: 5px;
+}
+
+.container .whyVaccinate {
+    width: 100%;
+    grid-area: whyVaccinate;
+}
+
+.whyVaccinate .reasonsBenefits {
+    position: relative;
+    left: 5%;
+}
+
+svg {
+    float: left;
+    fill: #1f3e72;
+    background-color: #eef3ff;
+    border-radius: 4px;
+    /*background-size: auto;*/
+}
+
+.whyVaccinate .benefits {
+    padding-top: 20px;
+    padding-bottom: 30px;
+    margin-left: 5px;
+    margin-right: 5px;
+    width: 17%;
+    box-shadow: rgba(31, 62, 114, 0.2) 0px 18px 50px -10px;
+    display: inline-block;
+}
+
+.container .benefits p {
+    font-size: 12px;
+}
+
+.svgBlock {
+    height: 35px;
+    width: 35px;
+    display: inline-block;
+}
+
+.benefits > * {
+    margin-left: 25px;
+}
+.container .preparation {
+    margin-top: 20px;
+    grid-area: preparation;
+}
+
+.container .preparation .preparationRight {
+    
+    width: 50%;
+    float: right;
+}
+
+.container .preparationRight > * {
+    margin-left: 50px;
+    
+}
+.prepDivs {
+    width: 400px;
+    display: block;
+
+    padding-top: 7px;
+    padding-bottom: 7px;
+    margin-left: 9.5%;
+    font-size: 21px;
+    box-shadow: rgba(31, 62, 114, 0.2) 0px 18px 50px -10px;
+}
+
+.leftsvg {
+    float: right;
+    position: relative;
+    top: -20px;
+}
+.prepDivs > svg {
+    margin-left: 10px;
+    margin-top: 2px;
+}
+
+.prepDivs > h6 {
+    width: 250px;
+}
+.container .preparation .preparationLeft {
+    margin-top: 50px;
+    width: 50%;
+    float: left;
+}
+.container .emergency {
+    margin-top: 20px;
+    grid-area: emergency;
+}
+
+.emergencyDiv p {
+    font-size: 12px;
+}
+.emergencyDiv div {
+    margin-bottom: 20px;
+}
+
+.emergencyDiv svg {
+    height: 30px;
+    width: 30px;
+    margin-right: 10px;
+}
+
+.container .emergency .emergencyRight {
+    
+    width: 50%;
+    float: right;
+
+}
+
+.container .emergency .emergencyLeft {
+    margin-top: 30px;
+    width: 50%;
+    float: left;
+}
+
+.container .vaccination {
+    padding-top: 50px;
+    width: 100%;
+    grid-area: footer;
+    background-color: #eef3ff;
+}
+
+.group {
+    display: block;
+    width: 100%;
+}
+
+.vaccinationRight {
+    margin-left: 60%;
+}
+
+.container .vaccinationLeft {
+    float: left;
+    margin-left: 50px;
+}
+
+.container .footerRight {
+    margin-left: 50px;
+    float: right;
+}
+
+.container .footerLeft {
+    float: left;
+}
+
+footer {
+    background-color: #eef3ff;
+}
+
+.options {
+    width: 95%;
+    background-color: #eef3ff; /* Green */
+    border: none;
+    color: #1f3e72;
+    padding: 15px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 12px;
+
+    cursor: pointer;
+    border-radius: 4px;
+    font-weight: bold;
+}
+
+
+.submit{
+    width: 112px;
+    background-color: #1c3ec5; /* Green */
+    border: none;
+    color: white;
+    padding: 15px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 12px;
+
+    cursor: pointer;
+    border-radius: 4px;
+    font-weight: bold;
+    position: relative;
+    top: 34px;
+    left: 30px;
+}
+
+#submit{
+    position: relative;
+    top: 34px;
+    left: 30px;
+
+}
+
+#sHeader{
+    position: relative;
+    top: -32px;
+    left: 450px;
+    font-size: 15px;
+    width: 150px;
+}
+.emergencyBox {
+    margin-top: 50px;
+    margin-left: 10px;
+    width: 70%;
+}
+
+.emergencyDiv {
+    margin: 5px;
+    padding: 25px;
+    float: left;
+    width: 45%;
+    box-shadow: rgba(31, 62, 114, 0.2) 0px 18px 50px -10px;
+    margin-left: 12px;
+}
+
+th {
+    text-align: left;
+    width: 12%;
+}
+
+td{
+   color: #6d7b93;
+}
+
+.yellow{
+    fill: #ffd012;
+    background-color: #fffbed;
+    margin-right: 5px;
+}
