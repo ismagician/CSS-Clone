@@ -150,6 +150,7 @@ nav li a {
     width: 900px;
     position: relative;
     left: 80px;
+    top: 150px;
 }
 
 .good {
@@ -402,7 +403,7 @@ footer {
 
 #sHeader{
     position: relative;
-    top: -32px;
+    top: -44px;
     left: 450px;
     font-size: 15px;
     width: 150px;
